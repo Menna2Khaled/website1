@@ -1,0 +1,468 @@
+.head .glow0{ 
+  background: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  position: absolute;
+}
+.head img{
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  position: absolute;
+}
+/*.nav{ 
+  top:0;
+  left: 0;
+  height: 100px;
+  background: red;
+  position: sticky; 
+}*/
+.nav img{
+    width: 10%;
+    height: 100px;
+    margin: 0px 10px;
+    left:50px;
+    top:0;
+    position: absolute;
+}
+.nav #u_of{
+  list-style-type: none;
+  padding: 0;
+  margin:25px 0px;
+  left: 350px;
+  position: absolute;
+}
+.nav ul li{
+  float: left;
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+.nav ul li #a_of{
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color:white;
+}
+.nav ul li #a_of:hover{
+  color:red;
+}
+.nav ul li ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: black
+}
+.nav ul li ul li a:hover{
+  color: red;
+}
+.nav ul li ul li{
+  float: none;
+  padding: 5px 0px;
+}
+.nav ul li ul{
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  padding: 15px 0px;
+  margin:0;
+  background: white;
+}
+.nav ul li:hover ul{
+  display: block;
+}
+.nav button{
+  background: red;
+  color: white;
+  margin: 25px 25px;
+  padding: 15px 20px;
+  top:0;
+  left:1100px;
+  position: absolute;
+}
+.nav button:hover{
+  background: black;
+}
+.clear{
+  clear: both;
+}
+.title h4{
+  color: white;
+  padding-bottom: 10px;
+  border-bottom : 1px solid white;
+  left: 5%;
+  top: 30%;
+  position: absolute;
+}
+.title p{
+  color: white;
+  font-size: 70px;
+  margin-top: -45px;
+  max-width: 600px;
+  left:5%;
+  top:50%;
+  position: absolute;
+}
+.title button{
+  background: red;
+  color: white;
+  margin-top: 25px;
+  max-width: 400px;
+  padding: 15px 25px;
+  left:5%;
+  top:80%;
+  position: absolute;
+}
+.title button:hover{
+  background: black;
+}
+.content h1{
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 100px 5px;
+  top: 100%;
+  left:30%;
+  position: absolute;
+}
+.content p{
+  color: black;
+  margin: 100px 5px;
+  max-width: 595px;
+  top: 110%;
+  left:30%;
+  position: absolute;
+}
+.content .left img{
+  width: 33.3%;
+  top:145%;
+  position: absolute;
+}
+.content .left h2{
+  top:200%;
+  margin-top: 50px;
+  color: black;
+  position: absolute;
+}
+.content .left #t0{
+  top:200%;
+  left:350px;
+  margin: 25px 0px;
+  padding: 20px 0px;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+}
+.content .left  p{
+  top:220%;
+  left: 0;
+  margin-top: 5px; 
+  max-width: 500px;
+  padding: 15px 0px;
+  position: absolute;
+}
+.content .left button{
+  border: 3px solid black;
+  color: black;
+  background: white;
+  padding: 15px 25px;
+  top:240%;
+  position: absolute;
+}
+.content .left button:hover{
+  color:white;
+  background: red;
+}
+.content .center img{
+  width: 33.3%;
+  top:145%;
+  left:500px;
+  position: absolute;
+} 
+.content .center h2{
+  top:200%;
+  left: 500px;
+  margin-top: 50px;
+  color: black;
+  position: absolute;
+}
+.content .center #t1{
+  top:200%;
+  left:850px;
+  margin: 25px 0px;
+  padding: 20px 0px;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+}
+.content .center p{
+  top:220%;
+  left:500px;
+  margin-top: 5px; 
+  max-width: 500px;
+  padding: 15px 0px;
+  position: absolute;
+}
+.content .center button{
+  border: 3px solid black;
+  color: black;
+  background: white;
+  padding: 15px 25px;
+  top:240%;
+  left: 500px;
+  position: absolute;
+}
+.content .center button:hover{
+  color: white;
+  background: red;
+}
+.content .right img{
+  width: 33.3%;
+  top:145%;
+  left:1000px;
+  position: absolute;
+}
+.content .right h2{
+  top:200%;
+  left: 1000px;
+  margin-top: 50px;
+  color: black;
+  position: absolute;
+}
+.content .right #t2{
+  top:200%;
+  left:1350px;
+  margin: 25px 0px;
+  padding: 20px 0px;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+}
+.content .right p{
+  top:220%;
+  left:1000px;
+  margin-top: 5px; 
+  max-width: 500px;
+  padding: 15px 0px;
+  position: absolute;
+}
+.content .right button{
+  border: 3px solid black;
+  color: black;
+  background: white;
+  padding: 15px 25px;
+  top:240%;
+  left: 1000px;
+  position: absolute;
+}
+.content .right button:hover{
+  color: white;
+  background: red;
+}
+.con h1{
+  top:270%;
+  left:200px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  max-width: 400px;
+  position: absolute;
+}
+.con p{
+  top:310%;
+  left:200px;
+  max-width: 400px;
+  position: absolute;
+}
+.con img{
+  top:270%;
+  left:800px;
+  width: 40%;
+  height: 90%;
+  position: absolute;
+}
+.con button{
+  border: 3px solid black;
+  color: black;
+  background: white;
+  padding: 15px 25px;
+  top:370%;
+  left:200px;
+  position: absolute;
+}
+.con button:hover{
+  color:white;
+  background: red;
+}
+.im img{
+  top:400%;
+  width: 100%;
+  left:0;
+  position: absolute;
+}
+.im .glow{
+  background: black;
+  opacity: 0.01;
+  top:400%;
+  width: 100%;
+  position: absolute;
+}
+.im h1{
+  top:420%;
+  left:370px;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+}
+.im p{
+  top:435%;
+  left:400px;
+  color: gray;
+  max-width: 600px;
+  position: absolute;
+}
+.im button{
+  top:450%;
+  left:600px;
+  color: white;
+  background: red;
+  padding: 15px 25px;
+  position: absolute;
+}
+.im button:hover{
+  color: white;
+  background: black;
+}
+.footer {
+  top:470%;
+  left: 0;
+  width: 100%;
+  height:600px;
+  position: absolute;
+  background-color: red;
+}
+.footer .left1 h2{
+  left:100px;
+  top:20%;
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.footer .left1 p{
+  left: 100px;
+  top:35%;
+  position: absolute;
+  color: white;
+  max-width: 280px;
+  font-size: 15px;
+}
+.footer .center1 h2{
+  left:500px;
+  top:20%;
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.footer .center1 #p5{
+  left: 500px;
+  top:35%;
+  position: absolute;
+  color: white;
+  max-width: 280px;
+  font-size: 15px;
+}
+.footer .center1 #p6{
+  left: 500px;
+  top:45%;
+  position: absolute;
+  color: white;
+  max-width: 250px;
+  font-size: 30px;
+}
+.footer .right1 h2{
+  left:900px;
+  top:20%;
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.footer .right1 p{
+  left: 900px;
+  top:35%;
+  position: absolute;
+  color: white;
+  max-width: 400px;
+  font-size: 15px;
+}
+.footer .right1 #txt{
+  left: 900px;
+  top:45%;
+  position: absolute;
+  content: "Email address";
+  background: white;
+  margin: 40px 0px;
+  padding: 10px 20px;
+}
+.footer .right1 #txt:checked{
+  content:"";
+}
+/*.footer .right1 #txt_in{
+  left: 900px;
+  top:45%;
+  position: absolute;
+  background: grey;
+  margin: 40px 0px;
+  padding: 10px 20px;
+}*/
+.footer .right1 button{
+  left: 1200px;
+  top:45%;
+  position: absolute;
+  margin: 40px 0px;
+  margin-left: -80px;
+  padding: 10px 20px;
+}
+.footer .bett p{
+  left: 100px;
+  top:80%;
+  position: absolute;
+  color: white;
+}
+.footer .bett a{
+  left: 500px;
+  top: 80%;
+  position: absolute;
+  margin: 15px 45px;
+  color: white;
+  text-decoration: none;
+}
+.footer .bett #img1{
+  top:80%;
+  left: 1000px;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+}
+.footer .bett #img2{
+  top:80%;
+  left: 1100px;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+}
+.footer .bett #img3{
+  top:80%;
+  left: 1200px;
+  position: absolute;
+  width: 5%;
+  height: 5%;
+}

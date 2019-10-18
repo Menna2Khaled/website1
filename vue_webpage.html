@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(window).on('scroll',function(){
+    if($(window).scrollTop()){
+        $('nav').addClass('mama');
+    }
+    else{
+        $('nav').removeClass('mama');
+    }
+});
+</script>
+    <title>website</title>
+    <link rel="stylesheet" href="vue_webpage.css" />
+</head>
+<body>
+    <div id="head">
+    <div class="container-fluid">
+        <img v-bind:src="backimg_src" v-bind:class="backimg_class">
+        <div v-bind:class="shadow_div_class"></div>
+    </div>
+    </div> 
+    <div id="nav"> 
+    <div class="container">
+        <div class="row" id="mama">
+        <div class="col">
+        <img v-bind:src="logoimg_src" v-bind:class="logoimg_class"> 
+        </div>
+    
+    <div class="col">
+        <ul  v-bind:id="ul_id">
+          <li><a href="#" v-bind:id="a_id">HOME</a></li>
+          <li><a href="#" v-bind:id="a_id">ABOUT</a></li>
+          <li>
+              <a href="#" v-bind:id="a_id">BLOGS</a>
+              <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Single blog</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#" v-bind:id="a_id">PAGES</a>
+              <ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Course Details</a></li>
+                    <li><a href="#">Course Schedule</a></li>
+                    <li><a href="#">Elements</a></li>
+             </ul>
+         </li>
+         <li><a href="#" v-bind:id="a_id">CONTACT</a></li>
+        </ul>
+        </div>
+    
+    <div class="col">
+        <button v-bind:class="butt_class">{{butt_text}}</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <h1 id="about">ABOUT US</h1>
+    <div id="con">
+        <h1 v-bind:class="header_txt_class">{{header_txt}}</h1>
+        <p v-bind:class="para1_txt_class">{{para1_txt}}</p>
+        <p v-bind:class="para2_txt_class">{{para2_txt}}</p>
+        <img v-bind:src="img_src" v-bind:class="img_src_class">
+        <button v-bind:class="butt1_txt_class">{{butt1_txt}}</button>
+    </div>
+    <div id="why">
+        <h1 v-bind:class="header1_txt_class">{{header1_txt}}</h1>
+        <p v-bind:class="para3_txt_class">{{para3_txt}}</p>
+    </div>
+    <div id="icons">
+        <div class="container">
+            <div class="row" id="zbt">
+                <div class="col">
+                    <img v-bind:src="img1_src" v-bind:class="img_class">
+                    <h1 v-bind:class="header_class">{{header11_txt}}</h1>
+                    <p v-bind:class="para_class">{{para11_txt}}</p>
+                </div>
+                <div class="col">
+                        <img v-bind:src="img2_src" v-bind:class="img_class">
+                        <h1 v-bind:class="header_class">{{header22_txt}}</h1>
+                        <p v-bind:class="para_class">{{para22_txt}}</p>    
+                </div>
+                <div class="col">
+                        <img v-bind:src="img3_src" v-bind:class="img_class">
+                        <h1 v-bind:class="header_class">{{header33_txt}}</h1>
+                        <p v-bind:class="para_class">{{para33_txt}}</p>
+                </div>
+                <div class="col">
+                        <img v-bind:src="img4_src" v-bind:class="img_class">
+                        <h1 v-bind:class="header_class">{{header44_txt}}</h1>
+                        <p v-bind:class="para_class">{{para44_txt}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cust">
+        <div class="container">
+            <div class="row" id="zbt1">
+                <div class="col">
+                    <h1 v-bind:class="header2_class">{{header2_txt}}</h1>
+                    <p v-bind:class="para222_class">{{para222_txt}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="yarab">
+        <div class="container">
+            <div class="row" id="zbt2">
+                <div class="col">
+                    <div class="card">
+                        <img v-bind:src="img11_src" v-bind:class="imgclass">
+                        <h1 v-bind:class="head_txt_class">{{head_txt}}</h1>
+                        <h4 v-bind:class="head2_txt_class">{{head2_2_txt}}</h4>
+                        <p v-bind:class="p_class">{{p_txt}}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                            <img v-bind:src="img22_src" v-bind:class="imgclass">
+                            <h1 v-bind:class="head_txt_class">{{head_txt}}</h1>
+                            <h4 v-bind:class="head2_txt_class">{{head2_2_txt}}</h4>
+                            <p v-bind:class="p_class">{{p_txt}}</p>   
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                            <img v-bind:src="img33_src" v-bind:class="imgclass">
+                            <h1 v-bind:class="head_txt_class">{{head_txt}}</h1>
+                            <h4 v-bind:class="head2_txt_class">{{head2_2_txt}}</h4>
+                            <p v-bind:class="p_class">{{p_txt}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="y5tay">
+        <img v-bind:src="img_111_src" v-bind:class="img_111_class">
+        <div id="glow1"></div>
+        <h1 v-bind:class="h1_txt_class">{{h1_txt}}</h1>
+        <p v-bind:class="p1_txt_class">{{p1_txt}}</p>
+        <button v-bind:class="b_txt_class">{{b_txt}}</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el:'#head',
+            data:{
+                backimg_src:'banner_bg.png',
+                backimg_class:'head_img',
+                shadow_div_class:'glow0'
+            }
+        });
+        new Vue({
+            el:'#nav',
+            data:{
+                logoimg_src:'logo.png',
+                logoimg_class:'nav_img',
+                ul_id:'u_of',
+                a_id:'a_of',
+                butt_class:'nav_button',
+                butt_text:'+440 1234 654 953'
+            }
+        });
+       new Vue({
+           el:'#con',
+           data:{
+               header_txt:'We are Fitfloss. A Dedicated Fitness Center Since 2004',
+               header_txt_class:'con_h1',
+               para1_txt:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+               para1_txt_class:'con_p1',
+               para2_txt:'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.',
+               para2_txt_class:'con_p2',
+               img_src:'about_img.png',
+               img_src_class:'con_img',
+               butt1_txt:'Browse Services',
+               butt1_txt_class:'con_button'
+           }
+       });
+       new Vue({
+           el:'#why',
+           data:{
+               header1_txt:'Why You Should Choose Us',
+               header1_txt_class:'why_h1',
+               para3_txt:'As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay And Settle Into An Intimate Friday Evening.',
+               para3_txt_class:'why_p'
+           }
+       });
+       new Vue({
+           el:'#icons',
+           data:{
+               img1_src:'feature_icon_1.png',
+               img2_src:'feature_icon_2.png',
+               img3_src:'feature_icon_3.png',
+               img4_src:'feature_icon_4.png',
+               img_class:'icons_img',
+               header11_txt:'Quality Training',
+               header22_txt:'Flexible Timeframe',
+               header33_txt:'Qualified Trainers',
+               header44_txt:'Affordable Price',
+               header_class:'icons_h',
+               para11_txt:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+               para22_txt:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+               para33_txt:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+               para44_txt:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+                para_class:'icons_p'
+           }
+       });
+       new Vue({
+           el:'#cust',
+           data:{
+               header2_txt:'What Customer’s Say About Us',
+               para222_txt:'As You Pour The First Glass Of Your Favorite Chianti Or Chardonnay And Settle Into An Intimate Friday Evening.',
+               header2_class:'cust_h',
+               para222_class:'cust_p'
+           }
+       });
+       new Vue({
+           el:'#yarab',
+           data:{
+               img11_src:'client_1.png',
+               img22_src:'client_2.png',
+               img33_src:'client_3.png',
+               imgclass:'yarab_img',
+               head_txt:'Helena Philips',
+               head_txt_class:'yarab_h1',
+               head2_2_txt:'CEO at Google',
+               head2_txt_class:'yarab_h2',
+               p_txt:'Accessories Here you can find the best computer accessory for your laptop,monitor,printer,scanner,speaker,projector,hardware and more.',
+               p_class:'yarab_p'
+           }
+       });
+       new Vue({
+           el:'#y5tay',
+           data:{
+                img_111_src:'become_member_bg.png',
+                img_111_class:'y5tay_img',
+                h1_txt:'Many more Features are Waiting!',
+                h1_txt_class:'y5tay_h',
+                p1_txt:'Thinking about overseas adventure travel? Have you put any thought into the best places to go when it comes to overseas adventure travel?',
+                p1_txt_class:'y5tay_p',
+                b_txt:'Become A Member',
+                b_txt_class:'y5tay_butt',
+           }
+       });
+    </script>
+</body>
+</html>
